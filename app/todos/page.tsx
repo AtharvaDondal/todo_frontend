@@ -225,7 +225,7 @@ export default function TodosPage() {
         {isLoggedIn && (
           <Button
             onClick={handleLogout}
-            className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer"
           >
             Logout
           </Button>
@@ -234,12 +234,12 @@ export default function TodosPage() {
         {!isLoggedIn && (
           <>
             <Link href={"/login"}>
-              <Button className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+              <Button className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">
                 Login
               </Button>
             </Link>
             <Link href={"/register"}>
-              <Button className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+              <Button className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">
                 Register
               </Button>
             </Link>
@@ -268,7 +268,7 @@ export default function TodosPage() {
               />
               <Button
                 onClick={handleAddTodo}
-                className="w-full py-6 text-xl bg-blue-500 text-white rounded-md transition hover:bg-blue-600 mt-6"
+                className="w-full py-6 text-xl bg-blue-500 text-white rounded-md transition hover:bg-blue-600 mt-6 shadow-md cursor-pointer"
               >
                 ➕ Add Todo
               </Button>
@@ -312,21 +312,21 @@ export default function TodosPage() {
                     <div className="flex gap-6">
                       {editingId === todo._id ? (
                         <Button
-                          className="text-xl px-6 py-4 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                          className="text-xl px-6 py-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 cursor-pointer"
                           onClick={() => handleSave(todo._id)}
                         >
                           💾 Save
                         </Button>
                       ) : (
                         <Button
-                          className="text-xl px-6 py-4 bg-green-500 text-white rounded-md hover:bg-green-600"
+                          className="text-xl px-6 py-4 bg-green-500 text-white rounded-md hover:bg-green-600 cursor-pointer"
                           onClick={() => handleEditClick(todo._id, todo.title)}
                         >
                           ✏️ Edit
                         </Button>
                       )}
                       <Button
-                        className="text-xl px-6 py-4 bg-red-500 text-white rounded-md hover:bg-red-600"
+                        className="text-xl px-6 py-4 bg-red-500 text-white rounded-md hover:bg-red-600 cursor-pointer"
                         onClick={() => handleDelete(todo._id)}
                       >
                         🗑️ Delete
