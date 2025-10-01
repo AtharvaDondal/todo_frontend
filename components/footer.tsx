@@ -3,12 +3,12 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="w-full mt-16 py-6 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white shadow-inner">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+    <footer className="w-full mt-8 py-6 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white shadow-inner box-border">
+      <div className="w-full max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         <div className="text-lg font-semibold mb-2 md:mb-0">
           Made with ❤️ by Atharva Dondal
         </div>
-        <div className="flex gap-6 text-xl">
+        <div className="flex gap-6 text-xl flex-wrap">
           <Link
             href="https://github.com/atharvadondal"
             target="_blank"
