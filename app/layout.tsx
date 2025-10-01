@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
+import Footer from "@/app/pages/Footer";
 // import { Link } from "lucide-react";
 // import { Button } from "@/components/ui/button";
 
@@ -39,4 +39,3 @@ export default function RootLayout({
   );
 }
 
-{/* <div class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div> */}
